@@ -70,6 +70,31 @@ Aliases: `huslpa`, `hpla`.
 ### With webpack 2
 
 ````javascript
+const LessHsluv         = require('less-hsluv');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+module.exports = {
+  ...foo,
+  module : {
+    rules : [
+      {
+        test : /\.less$/,
+        use  : ExtractTextPlugin.extract({
+          use      : [
+            'css-loader',
+            {
+              loader  : 'less-loader',
+              options : {
+                plugins : [new LessHsluv()],
+              },
+            }
+          ],
+          fallback : 'style-loader/useable'
+        })
+      }
+    ]
+  },
+  ...bar
+};
 ````
 
