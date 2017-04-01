@@ -13,7 +13,11 @@
     "keywords"     : [
         "less",
         "hsluv",
-        "color"
+        "hpluv",
+        "husl",
+        "huslp",
+        "color",
+        "colors"
     ],
     "author"       : "k0dek0mmand0",
     "contributors" : [
