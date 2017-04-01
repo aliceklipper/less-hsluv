@@ -1,55 +1,40 @@
-# less-husl
-Less.js plugin that lets you specify colors in HUSL color space. 
+# less-hsluv
+LESS plugin that lets you specify colors in HSLuv color space.
 
-See http://www.husl-colors.org/ for details.
+See http://hsluv.org for details.
 
 ## Installation
 
 With `npm`:
 ```bash
-npm --save-dev install less-husl
+npm i -D less-hsluv
 ```
-...or clone the repo, then run `npm install`.
+
+…or clone the repo, then run `npm i`.
 
 ## Example
 
 ```less
-// stylesheet.less
-@hue        : 180; // 0..360
-@saturation :  75; // 0..100
-@lightness  :  66; // 0..100
-//
-@my_color   : husl( @hue, @saturation, @lightness );
+@hue        : 180;
+@saturation :  75;
+@lightness  :  66;
+
+@my_color   : hsluv(@hue, @saturation, @lightness);
 ```
 
-## Usage 
+## Functions
 
-### With lessc
+ *  `hsluv(@h, @s, @l)`
+     *  `@h : 0..360`
+     *  `@s : 0..100`
+     *  `@l : 0..100`
+ *  `hpluv(@h, @s, @l)`
 
-```bash
-lessc --plugin=[path-to-cloned-repo]\lib\husl.js <stylesheet.less>
-```
+## Usage
 
-### With gulp
+### With webpack 2
 
-```javascript
-// gulpfile.js
-var less = require( 'gulp-less' );
-var husl = require( 'less-husl' );
-//
-var lessOpts =
-{
-	paths   : ['./src/less'],
-	plugins : [husl] 
-};
+````javascript
 
-gulp.task( 'css', function()
-{
-	gulp
-		.src ( ['./src/less/index.less'] )
-		.pipe( less( lessOpts ) )
-		.pipe( gulp.dest(' ./dist' ) );
-});
-// ...
-```
+````
 

@@ -19,10 +19,10 @@
         "color",
         "colors"
     ],
-    "author"       : "k0dek0mmand0",
+    "author"       : "Alice Klipper <alice.klipper@yandex.com> (https://vk.com/alice.klipper)",
     "contributors" : [
-        "k0dek0mmand0",
-        "Alice Klipper <alice.klipper@yandex.com> (https://vk.com/alice.klipper)"
+        "Alice Klipper <alice.klipper@yandex.com> (https://vk.com/alice.klipper)",
+        "k0dek0mmand0"
     ],
     "license"      : "MIT",
     "bugs"         : {
