@@ -1,28 +1,32 @@
 {
-  "name": "less-husl",
-  "version": "1.0.3",
-  "description": "Less.js plugin that adds HUSL color space support",
-  "main": "lib/husl.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/k0dek0mmand0/less-husl.git"
-  },
-  "keywords": [
-    "less",
-    "husl",
-    "color"
-  ],
-  "author": "k0dek0mmand0",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/k0dek0mmand0/less-husl/issues"
-  },
-  "homepage": "https://github.com/k0dek0mmand0/less-husl",
-  "dependencies": {
-    "debug": "^2.2.0",
-    "husl": "^6.0.0"
-  }
+    "name"         : "less-hsluv",
+    "version"      : "1.0.3",
+    "description"  : "LESS plugin that lets you specify colors in HSLuv color space.",
+    "main"         : "lib/hsluv.js",
+    "scripts"      : {
+        "test" : "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository"   : {
+        "type" : "git",
+        "url"  : "https://github.com/aliceklipper/less-hsluv.git"
+    },
+    "keywords"     : [
+        "less",
+        "hsluv",
+        "color"
+    ],
+    "author"       : "k0dek0mmand0",
+    "contributors" : [
+        "k0dek0mmand0",
+        "Alice Klipper <alice.klipper@yandex.com> (https://vk.com/alice.klipper)"
+    ],
+    "license"      : "MIT",
+    "bugs"         : {
+        "url" : "https://github.com/aliceklipper/less-hsluv/issues"
+    },
+    "homepage"     : "http://hsluv.org",
+    "dependencies" : {
+        "debug" : "^2.6.3",
+        "hsluv" : "0.0.1"
+    }
 }
