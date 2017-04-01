@@ -19,16 +19,51 @@ npm i -D less-hsluv
 @saturation :  75;
 @lightness  :  66;
 
-@my_color   : hsluv(@hue, @saturation, @lightness);
+@my-color   : hsluv(@hue, @saturation, @lightness);
 ```
+
+## API
+
+### `new LessHusl()`
+
+Creates new plugin instance.
 
 ## Functions
 
- *  `hsluv(@h, @s, @l)`
-     *  `@h : 0..360`
-     *  `@s : 0..100`
-     *  `@l : 0..100`
- *  `hpluv(@h, @s, @l)`
+### `hsluv(@h, @s, @l)`
+
+Arguments:
+ *  `@h : 0..360`,
+ *  `@s : 0..100`,
+ *  `@l : 0..100`.
+
+Aliases: `husl`.
+
+### `hpluv(@h, @s, @l)`
+
+Arguments: see above.
+
+Aliases: `huslp`, `hpl`.
+
+### `hsluva(@h, @s, @l, @a)`
+
+Arguments:
+ *  `@h : 0..360`,
+ *  `@s : 0..100`,
+ *  `@l : 0..100`,
+ *  `@a : 0..1`.
+
+Aliases: `husla`.
+
+### `hpluva(@h, @s, @l, @a)`
+
+Arguments:
+ *  `@h : 0..360`,
+ *  `@s : 0..100`,
+ *  `@l : 0..100`,
+ *  `@a : 0..1`.
+
+Aliases: `huslpa`, `hpla`.
 
 ## Usage
 

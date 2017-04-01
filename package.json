@@ -1,6 +1,6 @@
 {
     "name"         : "less-hsluv",
-    "version"      : "2.0.0",
+    "version"      : "2.1.0",
     "description"  : "LESS plugin that lets you specify colors in HSLuv color space.",
     "main"         : "lib/hsluv.js",
     "scripts"      : {
@@ -30,7 +30,6 @@
     },
     "homepage"     : "http://hsluv.org",
     "dependencies" : {
-        "debug" : "^2.6.3",
         "hsluv" : "0.0.1"
     }
 }
